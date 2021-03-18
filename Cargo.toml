@@ -1,0 +1,16 @@
+[package]
+name = "PCParadiseBot"
+version = "0.1.0"
+authors = ["awesomearvinder <ArvinderDhan@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+directories-next = "2"
+serde = {version = "1", features = ["derive"]}
+serenity = "0.10"
+sqlx = {version = "0.5", features = ["sqlite", "runtime-tokio-rustls"]}
+tokio = {version = "1", features = ["rt", "sync"]}
+toml = "0.5"
